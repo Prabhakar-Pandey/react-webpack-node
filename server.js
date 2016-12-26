@@ -23,26 +23,7 @@ var path = require('path');
 var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'src');
 
-app.use(webpackMiddleware(webpack({
-    entry: APP_DIR + '/index.js',
-    output: {
-        path: BUILD_DIR,
-        filename: 'bundle.js'
-    },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['react', 'es2015']
-            }
-        }]
-    },
-    resolve: {
-        extensions: ['', '.js', '.es6']
-    }
-}), {
+app.use(webpackMiddleware(webpack(require('./webpack.config.js')), {
     noInfo: false,
     quiet: false,
     // lazy: true,
