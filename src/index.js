@@ -1,4 +1,10 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-
-ReactDom.render(<h1>Hello world!!</h1>,document.getElementById('app'));
+import {render} from 'react-dom';
+import { Provider } from "react-redux";
+import MeetingDetails from './MeetingDetails';
+import store from './Store';
+render(
+    <Provider store={store}>
+        <MeetingDetails />
+    </Provider>
+    , document.getElementById('app'));

@@ -5,11 +5,14 @@ var BUILD_DIR = path.resolve(__dirname, 'build');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
+  mode: 'development',
   entry: APP_DIR + '/index.js',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  debug: true,
+  devtool: "source-map",
   module: {
    loaders: [
      {
@@ -17,7 +20,8 @@ var config = {
        exclude: /node_modules/,
        loader: 'babel-loader',
        query: {
-         presets: ['react', 'es2015'] 
+         presets: ['react', 'es2015'], 
+         plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
        }
      }
    ]
