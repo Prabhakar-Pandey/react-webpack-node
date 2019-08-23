@@ -23,13 +23,13 @@ export default function CalanderHead(props) {
                 </div>
             </div>
             <div className="btn-wrapper">
-                <div className="calander-button-tab">
+                <div className={props.slectedView=="DAY_VIEW"?"calander-button-tab active":"calander-button-tab"}>
                     Day
                         </div>
-                <div className="calander-button-tab">
+                <div className={props.slectedView=="WEEK_VIEW"?"calander-button-tab active":"calander-button-tab"}>
                     Week
                         </div>
-                <div className="calander-button-tab">
+                <div className={props.slectedView=="MONTH_VIEW"?"calander-button-tab active":"calander-button-tab"}>
                     Month
                         </div>
             </div>

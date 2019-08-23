@@ -82,15 +82,17 @@ class CalanderBody extends React.Component {
                 </div>
             </li>)
         for (var i = this.props.startDate, j = 1; i <= this.props.endDate; i++ , j++) {
-            let customClass = "date-row-wise-li"
+            let customClass = "date-row-wise-li";
+            let customDateClass = ""
             if (i == this.props.currentDate) {
-                customClass = "date-row-wise-li activeRow"
+                //customClass = "date-row-wise-li activeRow";
+                customDateClass = "activeDate"
             }
             eachDate.push(
                 <li className={customClass}>
                     <div>
                         <div className="calander-day">{CONSTANTS.DaysMapShort[j]}</div>
-                        <div className="calander-date">{i}</div>
+                        <div className="calander-date"><div className={customDateClass}>{i}</div></div>
                         {this.timeBlock(false, i, this.props.year)}
                     </div>
                 </li>

@@ -95,13 +95,14 @@ class Calander extends React.Component {
 
         return (
             <div className="calander-wrapper">
-                <b>calander {this.props.today}</b>
+                {/* <b>calander {this.props.today}</b> */}
                 <CalanderHead
                     onNextClick={this.onNextClick}
                     onPrevClick={this.onPrevClick}
                     currentYear={this.state.currentYear}
                     currentDate={this.state.currentDate}
                     currentMonth={this.state.currentMonth}
+                    slectedView={this.state.slectedView}
                 />
 
                 <CalendarBody
