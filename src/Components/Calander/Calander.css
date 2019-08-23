@@ -39,6 +39,7 @@ body {font-family: Verdana, sans-serif;}
     text-transform: uppercase;
     font-size: 30px;
     display: inline-block;
+    cursor: pointer;
 }   
 .calander-heading-text {
     margin: 10px;
@@ -68,6 +69,9 @@ body {font-family: Verdana, sans-serif;}
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 103%;
+}
+.activeRow{
+    background: #03a9f4b8;
 }
 .date-row-wise{
     display: block;
@@ -102,7 +106,7 @@ body {font-family: Verdana, sans-serif;}
     border-bottom: 1px solid #ccc;
     display: block;
 }
-.empty-content :hover{
+.empty-content:hover{
     background-color: #ccc;
 }
 .display-meeting-tab{
