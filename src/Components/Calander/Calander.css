@@ -1,0 +1,115 @@
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+.calander-wrapper{
+    border: 1px solid #ccc;
+    -webkit-box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
+    -moz-box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
+    box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
+    width: 80%;
+}
+.calander-heading{
+    display: flex;
+    padding-left: 35px;
+}
+.calander-button-tab{
+    border: 2px solid #2096f3;
+    margin: 10px;
+    width: 100px;
+    height: 33px;
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+.calander-button-nav {
+    
+}
+.next, .prev{
+    margin: 10px;
+    width: 40px;
+    flex-wrap: wrap;
+    -webkit-align-content: baseline;
+    align-content: center;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: inline-block;
+}   
+.calander-heading-text {
+    margin: 10px;
+    flex-wrap: wrap;
+    -webkit-align-content: baseline;
+    align-content: center;
+    padding: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+.active{
+    background-color: #2096f3;
+    color: #fff;
+}
+.btn-wrapper{
+    display: flex;
+}
+
+
+.date-row-wise-li{
+    display: block;
+    width: 130px;
+    border-left: 1px solid #ccc;
+    height: 54px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 103%;
+}
+.date-row-wise{
+    display: block;
+    width: 130px;
+    border-top: 1px solid #ccc;
+    height: 54px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-center{
+    text-align: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+}
+.calendar-month{
+    display: flex;
+    overflow: inherit;
+    height: 110%;
+    border-top: 1px solid #ccc;
+}
+.calander-day, .calander-date{
+    height:27px;
+    text-align: center;
+}
+.empty-content{
+    height: 49%;
+    width: 130px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+.empty-content :hover{
+    background-color: #ccc;
+}
+.display-meeting-tab{
+    width: 20px;
+    height: 10px;
+    background-color: red;
+    margin-left: 15px;
+    margin-top: 6px;
+    float: left;
+}

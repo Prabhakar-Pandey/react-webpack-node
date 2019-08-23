@@ -14,21 +14,25 @@ var config = {
   debug: true,
   devtool: "source-map",
   module: {
-   loaders: [
-     {
-       test: /\.js$/,
-       exclude: /node_modules/,
-       loader: 'babel-loader',
-       query: {
-         presets: ['react', 'es2015'], 
-         plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
-       }
-     }
-   ]
- },
- resolve: {
-   extensions: ['', '.js', '.es6']
- }
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015'],
+          plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
+        }
+      },
+      {
+        test: /\.css$/i,
+        loaders: ['style-loader', 'css-loader'],
+      }
+    ],
+  },
+  resolve: {
+    extensions: ['', '.js', '.es6']
+  }
 };
 
 
