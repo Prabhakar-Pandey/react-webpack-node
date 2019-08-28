@@ -5,16 +5,20 @@ body {font-family: Verdana, sans-serif;}
     -webkit-box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
     -moz-box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
     box-shadow: -2px 4px 4px -1px rgba(0,0,0,0.36);
-    width: 1087px;
+    width: 100%;
 }
 .calander-heading{
     display: flex;
     padding-left: 35px;
+    position: relative;
+}
+.date-row-wise-li>div{
+    width:100%;
 }
 .calander-button-tab{
     border: 2px solid #2096f3;
     margin: 10px;
-    width: 100px;
+    width: 140px !important;
     height: 33px;
     border-radius: 5px;
     display: -webkit-flex;
@@ -61,13 +65,14 @@ body {font-family: Verdana, sans-serif;}
 }
 .btn-wrapper{
     display: flex;
-    padding-left: 9%;
+    position: absolute;
+    right: 30px;
 }
 
 
 .date-row-wise-li{
     display: block;
-    width: 130px;
+    width: 13%;
     border-left: 1px solid #ccc;
     height: 54px;
     display: -webkit-flex;
@@ -81,7 +86,7 @@ body {font-family: Verdana, sans-serif;}
 }
 .date-row-wise{
     display: block;
-    width: 130px;
+    width: 100%;
     border-top: 1px solid #ccc;
     height: 54px;
     display: -webkit-flex;
@@ -104,35 +109,36 @@ body {font-family: Verdana, sans-serif;}
     border-top: 1px solid #ccc;
 }
 .calander-day{
-    height: 10px;
     text-align: center;
     color: #707070;
     text-transform: uppercase;
     padding: 10px;
     font-size: 12px;
+    height: 30px;
 }
 .calander-date{
-    height: 40px;
+    height: 50px;
     text-align: center;
     color: #707070;
     text-transform: uppercase;
     font-size: 30px;
+
 }
 .activeDate{
     background: #2096f3;
     border-radius: 60px;
-    width: 43px;
-    height: 35px;
-    padding-top: 6px;
+    width: 46px;
+    height: 44px;
+    padding-top: 2px;
     margin: 0 auto;
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
 }
 .empty-content{
-    height: 49%;
-    width: 130px;
+    height: 51%;
+    width: 160px;
     border-bottom: 1px solid #ccc;
-    display: block;
+    display: inline-block;
 }
 .empty-content:hover{
     background-color: #ccc;

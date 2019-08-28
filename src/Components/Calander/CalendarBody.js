@@ -24,6 +24,12 @@ class CalanderBody extends React.Component {
                 endTime: "10:30AM",
                 subject: "interview with prabhakar",
                 year: 2019
+            },{
+                date: "24/08/2019",
+                startTime: "11AM",
+                endTime: "10:30AM",
+                subject: "interview with prabhakar",
+                year: 2019
             }]
         }
     }
